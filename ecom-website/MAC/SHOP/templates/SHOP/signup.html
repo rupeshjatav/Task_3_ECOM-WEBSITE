@@ -1,0 +1,13 @@
+{% extends 'SHOP/index.html' %}
+{% load static %}
+{%block content%}
+<form action="{% url 'store' %}" method="POST">
+    {% csrf_token %}
+    username:<input type="text" name="username">
+    first: <input type="text" name="firstname">
+    last: <input type="text" name="lastname">
+    email: <input type="email" name="emailid">
+    password: <input type="text" name="password">
+    <input type="submit">
+</form>
+{%endblock content%}

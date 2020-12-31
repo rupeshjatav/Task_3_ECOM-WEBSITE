@@ -1,0 +1,17 @@
+{% extends 'SHOP/index.html' %}
+{% load static %}
+{%block content%}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody id="tableContent" >
+  </tbody>
+</table>
+{%endblock content%}
+<script src="{% static 'SHOP/ecom.js' %}"></script>
